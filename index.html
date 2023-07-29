@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WEATHER REPORT</title>
+    <link rel="icon" type="image/jpg" href="whether.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  
+  <body id="body">
+    <style>
+      #body
+      {background:url(1.jpg);
+        display: flex;
+        flex-direction: column;
+      background-size: cover;
+      
+      justify-content: center;
+    }
+       
+      
+     
+   </style>
+  
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">   
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" id="city">WEATHER FOR CITY</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+              </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" id="searchinp" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit" onclick="fetchData()" >Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+
+      
+    <div class=container  ></class>
+     <style>
+      .container{
+        align-items: center;
+        margin-top: 150px;
+      }
+     </style>
+   
+
+      <main >
+        <style>
+            
+            .card {
+              background-color:lightgray;
+              
+            }
+          </style>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3" >
+                <h2 class="my-0 fw-normal">TEMPERATURE</h2>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title pricing-card-title">Current   Temperature=<span id="temp"></span></h3>
+                <ul class="list-unstyled mt-3 mb-4">
+                  
+                  
+                </ul>
+               
+              </div>
+            </div>
+          </div>
+         
+          <div class="col" >
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h2 class="my-0 fw-normal">TEMPERATURE</h2>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title pricing-card-title">Maximum Temperature=<span id="max_temp"></span></h3>
+                <ul class="list-unstyled mt-3 mb-4">
+               
+                
+                 
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm ">
+              <div class="card-header py-3 ">
+                <h2 class="my-0 fw-normal">TEMPERATURE</h2>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title pricing-card-title">Minimum Temperature=<span id="min_temp"></span></h3>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li></li>
+                  
+                </ul>
+               
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm ">
+              <div class="card-header py-3 ">
+                <h2 class="my-0 fw-normal">TEMPERATURE</h2>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title pricing-card-title">Feels Like= <span id="feels_like"></span></h3>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li></li>
+                  
+                </ul>
+               
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm ">
+              <div class="card-header py-3 ">
+                <h2 class="my-0 fw-normal">HUMIDITY</h2>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title pricing-card-title">Humidity=<span id="humidity"></span></h3>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li></li>
+                  
+                </ul>
+               
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm ">
+              <div class="card-header py-3 ">
+                <h2 class="my-0 fw-normal">CLOUD_PCT</h2>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title pricing-card-title">Cloud PCT=<span id="cloud_pct"></span></h3>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li></li>
+                  
+                </ul>
+               
+              </div>
+            </div>
+          </div>
+
+
+
+      
+        </div>
+    
+       
+      </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+     <script src="script.js"></script>
+     
+</body>
+</html>
